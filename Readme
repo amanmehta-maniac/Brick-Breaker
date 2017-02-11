@@ -1,0 +1,62 @@
+/* Brick Breaker built by Aman Mehta */
+
+Compiling and Running the game :-
+
+    1)To compile: make (or make clean and then make preferably, *requires libao and mpg123 libraries.)
+    2)Then do ./sample2D to start the game
+
+Controls :-
+    Mouse ->
+      1) Hold and Drag basket and Cannon(Lazer Gun) to required place. (The baskets get highlighted when they are held{selected} by left mouse click)
+      2) To shoot Lazer, Left click at any point inside the shooting region.
+      3) To Zoom(in/out), use mouse scrolling.
+      4) Right mouse button to pan left/right when you click and drag.
+      5)* Direction to cannon's laser is given by the position of mouse cursor.
+
+    Keyboard ->
+      1) Space bar shoots a short laser from the cannon
+      2) 's' to move cannon up, 'f' to move down.
+      3) 'n' to decrease brick speed, 'm' to increase it.
+      4) 'Ctrl+Left', 'Ctrl+Right' to move red basket.
+      5) 'Alt+Left', 'Alt+Right' to move green basket.
+      6) 'Left/Right' Keys to pan the scene.
+      7) 'up/down' keys to zoom(in/out).
+
+Scoring :-
+    1) '+1' on collecting brick in the matching coloured basket.
+    2) '+3' on hitting Black Brick, '-1' for hitting others.
+    3) '+5' on collecting a special golden coin in any of the baskets.	
+    3) You lose if more than or equal to 5 wrong bricks are hit or any black brick is collected in any of the baskets.
+
+About the Game :-
+    1) Get as high score as possible.
+    2) Use mirror efficiently.
+
+Cannon's lazer types (3) :-
+    1) Normal (white) : gets away if it hits any of the bricks. Follows laws of reflection.
+    2)* Black laser : It is slow and immortal (doesn't end after hitting any bricks). *It is completely absorbed by the mirrors (doesn't reflect back).
+    3)* Colorful laser : It is faster than the Normal laser and is immortal. Follows laws of reflection.
+
+Brick Types (4):
+    1) Red
+    2) Green
+    3) Black
+    4)* Gold (coin) brick: It is a special brick which if collected by any of the baskets gets you 5 points.
+    5)* A preview of next falling brick and its position is provided for a second before it actually starts falling.
+
+*Sound effects: A cool background music is added to the game using mpg123 and libao library. (worked fine on my laptop, may lag on other systems depending on system configs)
+
+*Gameover screen: 
+	1)* Once you lose the game, you can start your game once again (restart) by clicking 'p' on the screen. 
+	2) This screen shows you the score of your current game.
+
+*Score Display: 
+	1) Seven segment display logic is used to display score in the window. A gameover screen displays "YOULOSE" using seven segment logic.
+	2) Score can be of any number of digits. (No limitation)
+	
+
+
+
+
+
+
