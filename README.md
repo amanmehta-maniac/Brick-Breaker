@@ -8,3 +8,6 @@ Prerequisites:
 To run:
 1. make
 2. ./sample2D
+
+
+Enjoy the game and play smart for more points! :)
